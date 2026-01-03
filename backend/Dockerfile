@@ -1,5 +1,5 @@
 # Build stage
-FROM eclipse-temurin:21-jdk AS build
+FROM eclipse-temurin:17-jdk AS build
 LABEL maintainer="codeamigos7@gmail.com"
 WORKDIR /app
 
@@ -22,7 +22,7 @@ COPY src ./src
 RUN ./mvnw clean package -DskipTests
 
 # Runtime stage
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:17-jre
 LABEL maintainer="codeamigos7@gmail.com"
 WORKDIR /app
 
