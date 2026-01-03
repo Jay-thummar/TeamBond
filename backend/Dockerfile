@@ -16,11 +16,15 @@ RUN chmod +x mvnw
 RUN ./mvnw dependency:resolve -B
 RUN ./mvnw dependency:resolve-sources -B
 
+# Copy lombok.config if it exists
+COPY lombok.config* ./
+
 # Copy source code
 COPY src ./src
 
 # Clean and build with annotation processing
-RUN ./mvnw clean compile -DskipTests
+# First compile to ensure Lombok generates getters/setters
+RUN ./mvnw clean compile -DskipTests -X 2>&1 | grep -i "lombok\|annotation\|processor" | head -20 || true
 RUN ./mvnw package -DskipTests
 
 # Runtime stage
