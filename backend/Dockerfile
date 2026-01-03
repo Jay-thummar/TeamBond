@@ -1,16 +1,32 @@
 # Build stage
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+FROM eclipse-temurin:21-jdk AS build
+LABEL maintainer="codeamigos7@gmail.com"
 WORKDIR /app
-COPY . .
-RUN mvn clean package -DskipTests
+
+# Copy Maven wrapper and pom.xml
+COPY mvnw .
+COPY mvnw.cmd .
+COPY .mvn .mvn
+COPY pom.xml .
+
+# Download dependencies
+RUN ./mvnw dependency:go-offline -B
+
+# Copy source code
+COPY src ./src
+
+# Build the application
+RUN ./mvnw clean package -DskipTests
 
 # Runtime stage
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:21-jre
 LABEL maintainer="codeamigos7@gmail.com"
 WORKDIR /app
 
 # Copy the JAR file from build stage
 COPY --from=build /app/target/CodeAmigos--Backend-0.0.1-SNAPSHOT.jar /app/CodeAmigos--Backend.jar
+
+# Note: .env file is NOT copied - environment variables are provided by Render/Railway/etc.
 
 # Expose port
 EXPOSE 8080
