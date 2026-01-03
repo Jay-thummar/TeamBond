@@ -11,22 +11,51 @@ import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.File;
+
 @Configuration
 public class RabbitMqConfig {
-    private static final Dotenv dotenv = Dotenv.load();
+    private static Dotenv dotenv;
+    
+    static {
+        try {
+            File envFile = new File(".env");
+            if (envFile.exists()) {
+                dotenv = Dotenv.load();
+            } else {
+                // Use system environment variables in production
+                dotenv = Dotenv.configure().ignoreIfMissing().load();
+            }
+        } catch (Exception e) {
+            // Fallback to system environment variables
+            dotenv = Dotenv.configure().ignoreIfMissing().load();
+        }
+    }
+    
+    private static String getEnv(String key) {
+        // Try dotenv first, then system environment
+        String value = dotenv.get(key, null);
+        if (value == null) {
+            value = System.getProperty(key);
+            if (value == null) {
+                value = System.getenv(key);
+            }
+        }
+        return value;
+    }
 
     @Bean
     public Queue rabbitMqQueue() {
         // Create the main queue with dead letter configuration
-        return QueueBuilder.durable(dotenv.get("rabbitmq.queue"))
-                .withArgument("x-dead-letter-exchange", dotenv.get("rabbitmq.dlx.exchange"))
-                .withArgument("x-dead-letter-routing-key", dotenv.get("rabbitmq.dlq.routingKey"))
+        return QueueBuilder.durable(getEnv("rabbitmq.queue"))
+                .withArgument("x-dead-letter-exchange", getEnv("rabbitmq.dlx.exchange"))
+                .withArgument("x-dead-letter-routing-key", getEnv("rabbitmq.dlq.routingKey"))
                 .build();
     }
 
     @Bean
     public TopicExchange topicExchange(){
-        return new TopicExchange(dotenv.get("rabbitmq.exchange"));
+        return new TopicExchange(getEnv("rabbitmq.exchange"));
     }
 
     //    Now bind the queue with the exchange using the routing key
@@ -35,19 +64,19 @@ public class RabbitMqConfig {
         return BindingBuilder
                 .bind(rabbitMqQueue())
                 .to(topicExchange())
-                .with(dotenv.get("rabbitmq.routingKey"));
+                .with(getEnv("rabbitmq.routingKey"));
     }
 
     @Bean
     public TopicExchange deadLetterExchange() {
         // Create the dead letter exchange
-        return new TopicExchange(dotenv.get("rabbitmq.dlx.exchange"));
+        return new TopicExchange(getEnv("rabbitmq.dlx.exchange"));
     }
 
     @Bean
     public Queue deadLetterQueue() {
         // Create the dead letter queue
-        return QueueBuilder.durable(dotenv.get("rabbitmq.dlq.queue")).build();
+        return QueueBuilder.durable(getEnv("rabbitmq.dlq.queue")).build();
     }
 
     @Bean
@@ -56,7 +85,7 @@ public class RabbitMqConfig {
         return BindingBuilder
                 .bind(deadLetterQueue())
                 .to(deadLetterExchange())
-                .with(dotenv.get("rabbitmq.dlq.routingKey"));
+                .with(getEnv("rabbitmq.dlq.routingKey"));
     }
 
     // We will also use the RabbitTemplate , ConnectionFactory and RabbitAdmin beans as well
@@ -97,7 +126,7 @@ public class RabbitMqConfig {
     // Configure message recoverer to send failed messages to DLQ after retries
     @Bean
     public RepublishMessageRecoverer republishMessageRecoverer(RabbitTemplate rabbitTemplate) {
-        return new RepublishMessageRecoverer(rabbitTemplate, dotenv.get("rabbitmq.dlx.exchange"), dotenv.get("rabbitmq.dlq.routingKey"));
+        return new RepublishMessageRecoverer(rabbitTemplate, getEnv("rabbitmq.dlx.exchange"), getEnv("rabbitmq.dlq.routingKey"));
     }
 
 }
