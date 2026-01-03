@@ -12,15 +12,16 @@ COPY pom.xml .
 # Make mvnw executable
 RUN chmod +x mvnw
 
-# Download dependencies
-RUN ./mvnw dependency:go-offline -B
+# Download dependencies (including annotation processors)
+RUN ./mvnw dependency:resolve -B
+RUN ./mvnw dependency:resolve-sources -B
 
 # Copy source code
 COPY src ./src
 
-# Build the application with verbose logging to debug Lombok
-RUN ./mvnw clean compile -X 2>&1 | head -100 || true
-RUN ./mvnw clean package -DskipTests -U
+# Clean and build with annotation processing
+RUN ./mvnw clean compile -DskipTests
+RUN ./mvnw package -DskipTests
 
 # Runtime stage
 FROM eclipse-temurin:21-jre
