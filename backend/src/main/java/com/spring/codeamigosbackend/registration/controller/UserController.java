@@ -47,8 +47,30 @@ import org.springframework.web.bind.annotation.RequestBody;  // For @RequestBody
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
 public class UserController {
-    private static Dotenv dotenv = Dotenv.load();
-    private static final String SECRET_KEY = dotenv.get("JWT_SECRET_KEY"); // Store in env variable
+    private static Dotenv dotenv;
+    private static final String SECRET_KEY;
+    
+    static {
+        try {
+            java.io.File envFile = new java.io.File(".env");
+            if (envFile.exists()) {
+                dotenv = Dotenv.load();
+            } else {
+                dotenv = Dotenv.configure().ignoreIfMissing().load();
+            }
+        } catch (Exception e) {
+            dotenv = Dotenv.configure().ignoreIfMissing().load();
+        }
+        
+        String key = dotenv.get("JWT_SECRET_KEY", null);
+        if (key == null) {
+            key = System.getProperty("JWT_SECRET_KEY");
+            if (key == null) {
+                key = System.getenv("JWT_SECRET_KEY");
+            }
+        }
+        SECRET_KEY = key != null ? key : "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOP";
+    }
     private final UserService userService;
     private final FrameworkController frameworkController;
     private final PaymentOrderRepository paymentOrderRepository;

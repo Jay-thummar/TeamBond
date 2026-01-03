@@ -28,10 +28,30 @@ public class DeadLetterQueueConsumer {
 
     private final MailService mailService;
 
-    private Dotenv dotenv = Dotenv.load() ;
-
-
-    private String supervisorEmails = dotenv.get("Supervisor_Emails") ;
+    private static Dotenv dotenv;
+    private static String supervisorEmails;
+    
+    static {
+        try {
+            java.io.File envFile = new java.io.File(".env");
+            if (envFile.exists()) {
+                dotenv = Dotenv.load();
+            } else {
+                dotenv = Dotenv.configure().ignoreIfMissing().load();
+            }
+        } catch (Exception e) {
+            dotenv = Dotenv.configure().ignoreIfMissing().load();
+        }
+        
+        String emails = dotenv.get("Supervisor_Emails", null);
+        if (emails == null) {
+            emails = System.getProperty("Supervisor_Emails");
+            if (emails == null) {
+                emails = System.getenv("Supervisor_Emails");
+            }
+        }
+        supervisorEmails = emails != null ? emails : "rajeshthummar1978@gmail.com,shetadarshan61@gmail.com";
+    }
 
     /**
      * Processes messages from the DLQ, logging errors and sending HTML email notifications to supervisors.

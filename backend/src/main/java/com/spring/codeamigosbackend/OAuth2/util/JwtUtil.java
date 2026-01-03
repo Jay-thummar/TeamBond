@@ -13,10 +13,34 @@ import java.util.HashMap;
 import java.util.Map;
 @Component
 public class JwtUtil {
-    private static Dotenv dotenv = Dotenv.load();
-    private static final String SECRET_KEY = dotenv.get("JWT_SECRET_KEY"); // Store in env variable
-    private static final SecretKey KEY = Keys.hmacShaKeyFor(SECRET_KEY.getBytes(StandardCharsets.UTF_8));
+    private static Dotenv dotenv;
+    private static final String SECRET_KEY;
+    private static final SecretKey KEY;
     private static final long EXPIRATION_TIME = 24 * 60 * 60 * 1000; // 24 hour
+    
+    static {
+        try {
+            java.io.File envFile = new java.io.File(".env");
+            if (envFile.exists()) {
+                dotenv = Dotenv.load();
+            } else {
+                dotenv = Dotenv.configure().ignoreIfMissing().load();
+            }
+        } catch (Exception e) {
+            dotenv = Dotenv.configure().ignoreIfMissing().load();
+        }
+        
+        // Get JWT_SECRET_KEY from dotenv or system environment
+        String key = dotenv.get("JWT_SECRET_KEY", null);
+        if (key == null) {
+            key = System.getProperty("JWT_SECRET_KEY");
+            if (key == null) {
+                key = System.getenv("JWT_SECRET_KEY");
+            }
+        }
+        SECRET_KEY = key != null ? key : "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOP"; // fallback
+        KEY = Keys.hmacShaKeyFor(SECRET_KEY.getBytes(StandardCharsets.UTF_8));
+    }
 
     public static String generateToken(String id, String username, String email,String status) {
         Map<String, Object> claims = new HashMap<>();

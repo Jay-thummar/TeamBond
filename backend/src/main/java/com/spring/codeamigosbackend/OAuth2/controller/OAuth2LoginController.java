@@ -24,8 +24,31 @@ import java.util.Optional;
 @RequestMapping("/oauth2")
 public class OAuth2LoginController {
 
-    private static Dotenv dotenv = Dotenv.load();
-    private static final String SECRET_KEY = dotenv.get("JWT_SECRET_KEY"); // Store in env variable
+    private static Dotenv dotenv;
+    private static final String SECRET_KEY;
+    
+    static {
+        try {
+            java.io.File envFile = new java.io.File(".env");
+            if (envFile.exists()) {
+                dotenv = Dotenv.load();
+            } else {
+                dotenv = Dotenv.configure().ignoreIfMissing().load();
+            }
+        } catch (Exception e) {
+            dotenv = Dotenv.configure().ignoreIfMissing().load();
+        }
+        
+        // Get JWT_SECRET_KEY from dotenv or system environment
+        String key = dotenv.get("JWT_SECRET_KEY", null);
+        if (key == null) {
+            key = System.getProperty("JWT_SECRET_KEY");
+            if (key == null) {
+                key = System.getenv("JWT_SECRET_KEY");
+            }
+        }
+        SECRET_KEY = key != null ? key : "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOP"; // fallback
+    }
     @Autowired
     private UserRepository userRepository;
 
