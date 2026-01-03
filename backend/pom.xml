@@ -232,10 +232,10 @@
 					</annotationProcessorPaths>
 					<compilerArgs>
 						<arg>-parameters</arg>
-						<arg>-Amapstruct.defaultComponentModel=spring</arg>
 					</compilerArgs>
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
+					<proc>full</proc>
 				</configuration>
 			</plugin>
 		</plugins>
