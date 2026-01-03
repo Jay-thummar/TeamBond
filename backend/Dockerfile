@@ -18,8 +18,9 @@ RUN ./mvnw dependency:go-offline -B
 # Copy source code
 COPY src ./src
 
-# Build the application
-RUN ./mvnw clean package -DskipTests
+# Build the application with verbose logging to debug Lombok
+RUN ./mvnw clean compile -X 2>&1 | head -100 || true
+RUN ./mvnw clean package -DskipTests -U
 
 # Runtime stage
 FROM eclipse-temurin:21-jre

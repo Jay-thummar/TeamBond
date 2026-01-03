@@ -217,6 +217,7 @@
 				<configuration>
 					<source>17</source>
 					<target>17</target>
+					<encoding>UTF-8</encoding>
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
@@ -231,7 +232,10 @@
 					</annotationProcessorPaths>
 					<compilerArgs>
 						<arg>-parameters</arg>
+						<arg>-Amapstruct.defaultComponentModel=spring</arg>
 					</compilerArgs>
+					<showWarnings>true</showWarnings>
+					<showDeprecation>true</showDeprecation>
 				</configuration>
 			</plugin>
 		</plugins>
