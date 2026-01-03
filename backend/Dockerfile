@@ -1,19 +1,4 @@
 # Build stage
-FROM eclipse-temurin:17-jdk AS build
-LABEL maintainer="codeamigos7@gmail.com"
-WORKDIR /app
-
-# Copy Maven wrapper and pom.xml
-COPY mvnw .
-COPY mvnw.cmd .
-COPY .mvn .mvn
-COPY pom.xml .
-
-# ✅ FIX: Give execute permission to mvnw
-RUN chmod +x mvnw
-
-# Download dependencies (cache layer)
-RUN ./mvnw dependency:go-offline -B
 
 # Copy source code
 COPY src ./src
