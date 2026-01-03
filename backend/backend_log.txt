@@ -1,0 +1,164 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 656B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 753B 0.1s done
+#2 DONE 0.3s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:21-jre
+#3 ...
+
+#4 [auth] library/eclipse-temurin:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/eclipse-temurin:21-jdk
+#5 ...
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:21-jre
+#3 DONE 27.4s
+
+#5 [internal] load metadata for docker.io/library/eclipse-temurin:21-jdk
+#5 DONE 29.0s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B 0.0s done
+#6 DONE 0.1s
+
+#7 [internal] load build context
+#7 transferring context: 227.37kB 0.1s done
+#7 DONE 0.2s
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 resolve docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d 0.1s done
+#8 DONE 0.4s
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 resolve docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304 0.1s done
+#9 sha256:919c22d58535d0a293684e9385c199a76f0a3c4cdfdb02257191974dc2dabfa1 0B / 2.28kB 0.2s
+#9 sha256:54b92ed1102d0a97c89567511b8a3e40e6283e43958991cc108b411f7eec78e4 0B / 158B 0.2s
+#9 ...
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:4a0e444f3c26062a0908ef59f39a3b8894225b2faef3d5b877c11441d3a52713 2.28kB / 2.28kB 3.8s done
+#8 sha256:1321ce5b3e3ab111f1a88d34df69fbf748e96e3338e9f3d403b062e3e26d99d9 158B / 158B 4.7s done
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 0B / 52.98MB 5.4s
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 5.4s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 3.15MB / 52.98MB 6.8s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 6.29MB / 52.98MB 7.7s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 9.44MB / 52.98MB 8.4s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 12.58MB / 52.98MB 9.2s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 15.73MB / 52.98MB 10.4s
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 10.5s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 18.87MB / 52.98MB 11.6s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 22.02MB / 52.98MB 12.2s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 25.17MB / 52.98MB 12.9s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 28.31MB / 52.98MB 13.7s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 31.46MB / 52.98MB 14.4s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 34.60MB / 52.98MB 15.2s
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 15.6s
+#8 ...
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 sha256:919c22d58535d0a293684e9385c199a76f0a3c4cdfdb02257191974dc2dabfa1 2.28kB / 2.28kB 4.6s done
+#9 sha256:54b92ed1102d0a97c89567511b8a3e40e6283e43958991cc108b411f7eec78e4 0B / 158B 11.0s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 0B / 157.84MB 7.4s
+#9 ...
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 37.75MB / 52.98MB 15.9s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 40.89MB / 52.98MB 17.1s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 44.04MB / 52.98MB 17.9s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 47.19MB / 52.98MB 18.8s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 50.33MB / 52.98MB 19.5s
+#8 sha256:0b92fa77023f1881e077b68fb149d30aade157324fdc1181dacf19b57e1313b9 52.98MB / 52.98MB 20.4s done
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 20.7s
+#8 ...
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 sha256:54b92ed1102d0a97c89567511b8a3e40e6283e43958991cc108b411f7eec78e4 158B / 158B 16.1s done
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 0B / 157.84MB 16.2s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 7.34MB / 22.96MB 4.1s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 9.44MB / 22.96MB 4.5s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 11.53MB / 22.96MB 5.1s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 13.63MB / 22.96MB 5.7s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 15.73MB / 22.96MB 6.6s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 17.83MB / 22.96MB 7.4s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 19.92MB / 22.96MB 8.1s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 22.02MB / 22.96MB 8.7s
+#9 sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 22.96MB / 22.96MB 9.0s done
+#9 extracting sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 1.05MB / 157.84MB 21.3s
+#9 extracting sha256:b7f312f519fbac7fa8ab5e034ea3afc3f2f0e15c1b4f93c20f0ef6bdf5e3ba72 1.0s done
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 9.44MB / 157.84MB 23.7s
+#9 ...
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 34.6s
+#8 ...
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 16.78MB / 157.84MB 28.8s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 25.17MB / 157.84MB 32.2s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 33.55MB / 157.84MB 36.1s
+#9 ...
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 45.0s
+#8 ...
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 41.94MB / 157.84MB 40.0s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 51.38MB / 157.84MB 45.0s
+#9 ...
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 55.3s
+#8 ...
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 59.77MB / 157.84MB 48.9s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 68.16MB / 157.84MB 51.4s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 76.55MB / 157.84MB 54.6s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 84.93MB / 157.84MB 56.4s
+#9 ...
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 65.5s
+#8 ...
+
+#9 [build 1/9] FROM docker.io/library/eclipse-temurin:21-jdk@sha256:cd772abe6bc42ddc2f5927756ea33fb26470726438fe0631472cccd4c5ecc304
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 93.32MB / 157.84MB 60.3s
+#9 sha256:388658fb69f54e5682104e6b0cf9b8753587e33278a43c2254254fb595999c52 101.71MB / 157.84MB 62.4s
+#9 DONE 73.7s
+
+#8 [stage-1 1/4] FROM docker.io/library/eclipse-temurin:21-jre@sha256:b0f6befb3f2af49704998c4425cb6313c1da505648a8e78cee731531996f735d
+#8 sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942 0B / 16.97MB 73.2s
+#8 ...
+
+#10 [stage-1 2/4] WORKDIR /app
+#10 ERROR: failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/library/eclipse-temurin/blobs/sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942": dialing registry-1.docker.io:443 container via direct connection because Docker Desktop has no HTTPS proxy: connecting to registry-1.docker.io:443: dial tcp: lookup registry-1.docker.io: no such host
+
+#11 [build 2/9] WORKDIR /app
+#11 CANCELED
+------
+ > [stage-1 2/4] WORKDIR /app:
+------
+Dockerfile:23
+
+--------------------
+
+  21 |     FROM eclipse-temurin:21-jre
+
+  22 |     LABEL maintainer="codeamigos7@gmail.com"
+
+  23 | >>> WORKDIR /app
+
+  24 |     
+
+  25 |     # Copy the JAR file from build stage
+
+--------------------
+
+failed to solve: failed to compute cache key: failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/library/eclipse-temurin/blobs/sha256:f878172f1ac3121519dd1795c821097cda557a10d8ac4526d248f9fe1738b942": dialing registry-1.docker.io:443 container via direct connection because Docker Desktop has no HTTPS proxy: connecting to registry-1.docker.io:443: dial tcp: lookup registry-1.docker.io: no such host
+

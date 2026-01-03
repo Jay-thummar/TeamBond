@@ -1,0 +1,69 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: codeamigos-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=codeamigos
+    networks:
+      - codeamigos-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: codeamigos-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: always
+    command: redis-server --requirepass ${REDIS_PASSWORD:-defaultpassword}
+    networks:
+      - codeamigos-network
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: codeamigos-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    restart: always
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin123
+    networks:
+      - codeamigos-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: codeamigos-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+      - redis
+      - rabbitmq
+    env_file:
+      - .env
+    restart: always
+    networks:
+      - codeamigos-network
+    volumes:
+      - ./logs:/app/logs
+
+volumes:
+  mongo-data:
+  redis-data:
+  rabbitmq-data:
+
+
+networks:
+  codeamigos-network:
+    driver: bridge

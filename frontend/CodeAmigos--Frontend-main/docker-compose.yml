@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: codeamigos-frontend
+    ports:
+      - "80:80"
+    restart: always
+    networks:
+      - codeamigos-network
+
+networks:
+  codeamigos-network:
+    external: true
+
+
