@@ -39,7 +39,7 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/", "/api/users/login","/api/users/me", "/register/", "/oauth2/authorization/**", "/login/oauth2/code/**", "/request/**", "/requests/**","/api/users/register","api/users/ping"
                         ).permitAll()
-                        .requestMatchers("/oauth2/success").authenticated()
+                        .requestMatchers("/auth/success").authenticated()
                         .requestMatchers("/api/hackathons/recommended-hackathons", "/api/hackathons/nearby-hackathons")
                         .hasAuthority("PAID")
                         .anyRequest().authenticated()
@@ -54,7 +54,7 @@ public class SecurityConfig {
                 )
                 .oauth2Login(oauth -> oauth
                         .userInfoEndpoint(userInfo -> userInfo.userService(customOAuth2UserService))
-                        .defaultSuccessUrl("/oauth2/success", true)
+                        .defaultSuccessUrl("/auth/success", true)
                 )
                 .logout(logout -> logout
                         .logoutUrl("/logout")
