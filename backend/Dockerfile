@@ -13,9 +13,9 @@ COPY pom.xml .
 RUN chmod +x mvnw
 
 # Download dependencies (including annotation processors)
-RUN ./mvnw dependency:resolve -B
-RUN ./mvnw dependency:resolve-sources -B
+RUN ./mvnw dependency:go-offline -B
 
+# Force rebuild to clear cache
 # Copy lombok.config if it exists
 COPY lombok.config* ./
 
@@ -24,8 +24,8 @@ COPY src ./src
 
 # Clean and build with annotation processing
 # First compile to ensure Lombok generates getters/setters
-RUN ./mvnw clean compile -DskipTests -X 2>&1 | grep -i "lombok\|annotation\|processor" | head -20 || true
-RUN ./mvnw package -DskipTests
+RUN ./mvnw clean compile -DskipTests -Dmaven.compiler.proc=full -X 2>&1 | grep -i "lombok\|annotation\|processor" | head -20 || true
+RUN ./mvnw package -DskipTests -Dmaven.compiler.proc=full
 
 # Runtime stage
 FROM eclipse-temurin:21-jre

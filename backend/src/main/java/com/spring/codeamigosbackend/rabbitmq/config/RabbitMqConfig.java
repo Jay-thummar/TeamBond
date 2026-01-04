@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Configuration;
 import java.io.File;
 
 @Configuration
-@Configuration
 public class RabbitMqConfig {
 
     private static String getEnv(String key) {

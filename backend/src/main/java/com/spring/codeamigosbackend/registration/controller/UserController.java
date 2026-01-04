@@ -1,8 +1,8 @@
 package com.spring.codeamigosbackend.registration.controller;
 
-import com.spring.codeamigosbackend.OAuth2.util.EncryptionUtil;
-import com.spring.codeamigosbackend.rabbitmq.producer.RabbitMqProducer;
 import com.spring.codeamigosbackend.OAuth2.util.JwtUtil;
+import com.spring.codeamigosbackend.rabbitmq.producer.RabbitMqProducer;
+import com.spring.codeamigosbackend.OAuth2.util.EncryptionUtil;
 import com.spring.codeamigosbackend.recommendation.controllers.FrameworkController;
 import com.spring.codeamigosbackend.recommendation.dtos.GithubScoreRequest;
 import com.spring.codeamigosbackend.registration.model.User;

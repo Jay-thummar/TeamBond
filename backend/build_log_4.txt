@@ -1,0 +1,644 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.spring:CodeAmigos--Backend >-------------------
+[INFO] Building CodeAmigos--Backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ CodeAmigos--Backend ---
+[INFO] Deleting C:\Users\DELL\Downloads\Temp_Monorepo\backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ CodeAmigos--Backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ CodeAmigos--Backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 64 source files with javac [debug parameters release 17] to target\classes
+[INFO] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/util/JwtUtil.java: C:\Users\DELL\Downloads\Temp_Monorepo\backend\src\main\java\com\spring\codeamigosbackend\OAuth2\util\JwtUtil.java uses or overrides a deprecated API.
+[INFO] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/util/JwtUtil.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/config/AppConfig.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/config/AppConfig.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/config/SecurityConfig.java:[74,25] and() in org.springframework.security.config.annotation.web.configurers.SessionManagementConfigurer.ConcurrencyControlConfigurer has been deprecated and marked for removal
+[INFO] 1 warning
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[49,20] cannot find symbol
+  symbol:   class Logger
+  location: class com.spring.codeamigosbackend.OAuth2.controller.OAuth2LoginController
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/rabbitmq/config/RabbitMqConfig.java:[17,1] org.springframework.context.annotation.Configuration is not a repeatable annotation type
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[49,36] cannot find symbol
+  symbol:   variable LoggerFactory
+  location: class com.spring.codeamigosbackend.OAuth2.controller.OAuth2LoginController
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[71,17] cannot find symbol
+  symbol:   method setGithubId(int)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[72,17] cannot find symbol
+  symbol:   method setGithubUsername(java.lang.String)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[73,17] cannot find symbol
+  symbol:   method setGithubAvatarUrl(java.lang.String)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[75,17] cannot find symbol
+  symbol:   method setProfileComplete(boolean)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[81,18] cannot find symbol
+  symbol:   method isProfileComplete()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[86,41] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[94,21] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[95,21] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[96,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[97,21] cannot find symbol
+  symbol:   method getStatus()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[111,41] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[113,60] cannot find symbol
+  symbol:   method getGithubAccessToken()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[114,27] cannot find symbol
+  symbol:   method setAccessToken(java.lang.String)
+  location: variable githubScoreRequest of type com.spring.codeamigosbackend.recommendation.dtos.GithubScoreRequest
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[115,44] cannot find symbol
+  symbol:   method getGithubUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[26,49] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[27,84] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[45,18] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[63,21] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[64,57] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[65,92] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[67,46] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[70,21] cannot find symbol
+  symbol:   method getDisplayName()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[71,49] cannot find symbol
+  symbol:   method getDisplayName()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[73,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[74,43] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[76,21] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[77,46] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[79,21] cannot find symbol
+  symbol:   method getBio()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[80,41] cannot find symbol
+  symbol:   method getBio()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[82,21] cannot find symbol
+  symbol:   method getGithubUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[83,52] cannot find symbol
+  symbol:   method getGithubUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[85,21] cannot find symbol
+  symbol:   method getLeetcodeUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[86,54] cannot find symbol
+  symbol:   method getLeetcodeUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[88,21] cannot find symbol
+  symbol:   method getLinkedinUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[89,49] cannot find symbol
+  symbol:   method getLinkedinUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[91,21] cannot find symbol
+  symbol:   method getCodechefUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[92,54] cannot find symbol
+  symbol:   method getCodechefUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[94,21] cannot find symbol
+  symbol:   method getInstagramUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[95,55] cannot find symbol
+  symbol:   method getInstagramUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[97,21] cannot find symbol
+  symbol:   method getTwitterUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[98,53] cannot find symbol
+  symbol:   method getTwitterUsername()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[100,21] cannot find symbol
+  symbol:   method getResumeUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[101,47] cannot find symbol
+  symbol:   method getResumeUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[103,21] cannot find symbol
+  symbol:   method getPortfolioUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[104,50] cannot find symbol
+  symbol:   method getPortfolioUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[106,21] cannot find symbol
+  symbol:   method getGifUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[107,44] cannot find symbol
+  symbol:   method getGifUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[109,21] cannot find symbol
+  symbol:   method getCoverPhotoUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[110,51] cannot find symbol
+  symbol:   method getCoverPhotoUrl()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[112,21] cannot find symbol
+  symbol:   method getEmoji()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[113,43] cannot find symbol
+  symbol:   method getEmoji()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[125,54] invalid method reference
+  cannot find symbol
+    symbol:   method getId()
+    location: class com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[138,9] cannot find symbol
+  symbol:   variable log
+  location: class com.spring.codeamigosbackend.registration.service.UserService
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[55,17] cannot find symbol
+  symbol:   method setGithubId(int)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[56,17] cannot find symbol
+  symbol:   method setGithubUsername(java.lang.String)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[57,17] cannot find symbol
+  symbol:   method setGithubAvatarUrl(java.lang.String)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[59,17] cannot find symbol
+  symbol:   method setProfileComplete(boolean)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[61,32] cannot find symbol
+  symbol:   method getGithubAccessToken()
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[64,13] cannot find symbol
+  symbol:   method setGithubAccessToken(java.lang.String)
+  location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/controller/HackathonController.java:[52,29] cannot find symbol
+  symbol:   method setLogo(java.lang.String)
+  location: variable hackathonDTO of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[61,34] cannot find symbol
+  symbol:   method getLogo()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[62,35] cannot find symbol
+  symbol:   method getTitle()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[63,42] cannot find symbol
+  symbol:   method getOrganization()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[64,35] cannot find symbol
+  symbol:   method getTheme()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[65,34] cannot find symbol
+  symbol:   method getMode()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[66,35] cannot find symbol
+  symbol:   method getAbout()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[67,38] cannot find symbol
+  symbol:   method getLocation()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[68,40] cannot find symbol
+  symbol:   method getTechStacks()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[69,94] cannot find symbol
+  symbol:   method getLocation()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[70,18] cannot find symbol
+  symbol:   method setLatitude(java.lang.Double)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[71,18] cannot find symbol
+  symbol:   method setLongitude(java.lang.Double)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[73,20] cannot find symbol
+  symbol:   method getTeamSize()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[75,36] cannot find symbol
+  symbol:   method getTeamSize()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[76,36] cannot find symbol
+  symbol:   method getTeamSize()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[77,22] cannot find symbol
+  symbol:   method setTeamSize(com.spring.codeamigosbackend.hackathon.model.Hackathon.TeamSize)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[81,31] cannot find symbol
+  symbol:   method getRegistrationDates()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[82,29] cannot find symbol
+  symbol:   method getRegistrationDates()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[83,18] cannot find symbol
+  symbol:   method setRegistrationDates(com.spring.codeamigosbackend.hackathon.model.Hackathon.RegistrationDates)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[84,18] cannot find symbol
+  symbol:   method setCurrentTeamSize(int)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[86,40] cannot find symbol
+  symbol:   method getHackathonDates()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[87,38] cannot find symbol
+  symbol:   method getHackathonDates()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[88,18] cannot find symbol
+  symbol:   method setHackathonDates(com.spring.codeamigosbackend.hackathon.model.Hackathon.HackathonDates)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[89,18] cannot find symbol
+  symbol:   method setCreatedAt(java.time.LocalDateTime)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[90,18] cannot find symbol
+  symbol:   method setUpdatedAt(java.time.LocalDateTime)
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[91,39] cannot find symbol
+  symbol:   method getCreatedBy()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[92,41] cannot find symbol
+  symbol:   method getCreatedById()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[119,20] cannot find symbol
+  symbol:   method getRegistrationDates()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[119,69] cannot find symbol
+  symbol:   method getRegistrationDates()
+  location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[165,26] cannot find symbol
+  symbol:   method getLatitude()
+  location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[165,53] cannot find symbol
+  symbol:   method getLongitude()
+  location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[167,79] cannot find symbol
+  symbol:   method getLatitude()
+  location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[167,96] cannot find symbol
+  symbol:   method getLongitude()
+  location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[189,35] cannot find symbol
+  symbol:   method getFrameworkUsage()
+  location: variable stats of type com.spring.codeamigosbackend.recommendation.models.UserFrameworkStats
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[189,72] cannot find symbol
+  symbol:   method getFrameworkUsage()
+  location: variable stats of type com.spring.codeamigosbackend.recommendation.models.UserFrameworkStats
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[194,52] cannot find symbol
+  symbol:   method getFrameworkUsage()
+  location: variable stats of type com.spring.codeamigosbackend.recommendation.models.UserFrameworkStats
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[240,43] cannot find symbol
+  symbol:   method getTechStacks()
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[264,43] cannot find symbol
+  symbol:   method getTechStacks()
+  location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.986 s
+[INFO] Finished at: 2026-01-03T23:46:26+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project CodeAmigos--Backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[49,20] cannot find symbol
+[ERROR]   symbol:   class Logger
+[ERROR]   location: class com.spring.codeamigosbackend.OAuth2.controller.OAuth2LoginController
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/rabbitmq/config/RabbitMqConfig.java:[17,1] org.springframework.context.annotation.Configuration is not a repeatable annotation type
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[49,36] cannot find symbol
+[ERROR]   symbol:   variable LoggerFactory
+[ERROR]   location: class com.spring.codeamigosbackend.OAuth2.controller.OAuth2LoginController
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[71,17] cannot find symbol
+[ERROR]   symbol:   method setGithubId(int)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[72,17] cannot find symbol
+[ERROR]   symbol:   method setGithubUsername(java.lang.String)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[73,17] cannot find symbol
+[ERROR]   symbol:   method setGithubAvatarUrl(java.lang.String)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[75,17] cannot find symbol
+[ERROR]   symbol:   method setProfileComplete(boolean)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[81,18] cannot find symbol
+[ERROR]   symbol:   method isProfileComplete()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[86,41] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[94,21] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[95,21] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[96,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[97,21] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[111,41] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[113,60] cannot find symbol
+[ERROR]   symbol:   method getGithubAccessToken()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[114,27] cannot find symbol
+[ERROR]   symbol:   method setAccessToken(java.lang.String)
+[ERROR]   location: variable githubScoreRequest of type com.spring.codeamigosbackend.recommendation.dtos.GithubScoreRequest
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java:[115,44] cannot find symbol
+[ERROR]   symbol:   method getGithubUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[26,49] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[27,84] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[45,18] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[63,21] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[64,57] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[65,92] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[67,46] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[70,21] cannot find symbol
+[ERROR]   symbol:   method getDisplayName()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[71,49] cannot find symbol
+[ERROR]   symbol:   method getDisplayName()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[73,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[74,43] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[76,21] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[77,46] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[79,21] cannot find symbol
+[ERROR]   symbol:   method getBio()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[80,41] cannot find symbol
+[ERROR]   symbol:   method getBio()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[82,21] cannot find symbol
+[ERROR]   symbol:   method getGithubUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[83,52] cannot find symbol
+[ERROR]   symbol:   method getGithubUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[85,21] cannot find symbol
+[ERROR]   symbol:   method getLeetcodeUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[86,54] cannot find symbol
+[ERROR]   symbol:   method getLeetcodeUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[88,21] cannot find symbol
+[ERROR]   symbol:   method getLinkedinUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[89,49] cannot find symbol
+[ERROR]   symbol:   method getLinkedinUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[91,21] cannot find symbol
+[ERROR]   symbol:   method getCodechefUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[92,54] cannot find symbol
+[ERROR]   symbol:   method getCodechefUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[94,21] cannot find symbol
+[ERROR]   symbol:   method getInstagramUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[95,55] cannot find symbol
+[ERROR]   symbol:   method getInstagramUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[97,21] cannot find symbol
+[ERROR]   symbol:   method getTwitterUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[98,53] cannot find symbol
+[ERROR]   symbol:   method getTwitterUsername()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[100,21] cannot find symbol
+[ERROR]   symbol:   method getResumeUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[101,47] cannot find symbol
+[ERROR]   symbol:   method getResumeUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[103,21] cannot find symbol
+[ERROR]   symbol:   method getPortfolioUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[104,50] cannot find symbol
+[ERROR]   symbol:   method getPortfolioUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[106,21] cannot find symbol
+[ERROR]   symbol:   method getGifUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[107,44] cannot find symbol
+[ERROR]   symbol:   method getGifUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[109,21] cannot find symbol
+[ERROR]   symbol:   method getCoverPhotoUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[110,51] cannot find symbol
+[ERROR]   symbol:   method getCoverPhotoUrl()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[112,21] cannot find symbol
+[ERROR]   symbol:   method getEmoji()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[113,43] cannot find symbol
+[ERROR]   symbol:   method getEmoji()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[125,54] invalid method reference
+[ERROR]   cannot find symbol
+[ERROR]     symbol:   method getId()
+[ERROR]     location: class com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java:[138,9] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.spring.codeamigosbackend.registration.service.UserService
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[55,17] cannot find symbol
+[ERROR]   symbol:   method setGithubId(int)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[56,17] cannot find symbol
+[ERROR]   symbol:   method setGithubUsername(java.lang.String)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[57,17] cannot find symbol
+[ERROR]   symbol:   method setGithubAvatarUrl(java.lang.String)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[59,17] cannot find symbol
+[ERROR]   symbol:   method setProfileComplete(boolean)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[61,32] cannot find symbol
+[ERROR]   symbol:   method getGithubAccessToken()
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/OAuth2/service/CustomOAuth2UserService.java:[64,13] cannot find symbol
+[ERROR]   symbol:   method setGithubAccessToken(java.lang.String)
+[ERROR]   location: variable user of type com.spring.codeamigosbackend.registration.model.User
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/controller/HackathonController.java:[52,29] cannot find symbol
+[ERROR]   symbol:   method setLogo(java.lang.String)
+[ERROR]   location: variable hackathonDTO of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[61,34] cannot find symbol
+[ERROR]   symbol:   method getLogo()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[62,35] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[63,42] cannot find symbol
+[ERROR]   symbol:   method getOrganization()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[64,35] cannot find symbol
+[ERROR]   symbol:   method getTheme()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[65,34] cannot find symbol
+[ERROR]   symbol:   method getMode()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[66,35] cannot find symbol
+[ERROR]   symbol:   method getAbout()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[67,38] cannot find symbol
+[ERROR]   symbol:   method getLocation()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[68,40] cannot find symbol
+[ERROR]   symbol:   method getTechStacks()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[69,94] cannot find symbol
+[ERROR]   symbol:   method getLocation()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[70,18] cannot find symbol
+[ERROR]   symbol:   method setLatitude(java.lang.Double)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[71,18] cannot find symbol
+[ERROR]   symbol:   method setLongitude(java.lang.Double)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[73,20] cannot find symbol
+[ERROR]   symbol:   method getTeamSize()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[75,36] cannot find symbol
+[ERROR]   symbol:   method getTeamSize()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[76,36] cannot find symbol
+[ERROR]   symbol:   method getTeamSize()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[77,22] cannot find symbol
+[ERROR]   symbol:   method setTeamSize(com.spring.codeamigosbackend.hackathon.model.Hackathon.TeamSize)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[81,31] cannot find symbol
+[ERROR]   symbol:   method getRegistrationDates()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[82,29] cannot find symbol
+[ERROR]   symbol:   method getRegistrationDates()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[83,18] cannot find symbol
+[ERROR]   symbol:   method setRegistrationDates(com.spring.codeamigosbackend.hackathon.model.Hackathon.RegistrationDates)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[84,18] cannot find symbol
+[ERROR]   symbol:   method setCurrentTeamSize(int)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[86,40] cannot find symbol
+[ERROR]   symbol:   method getHackathonDates()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[87,38] cannot find symbol
+[ERROR]   symbol:   method getHackathonDates()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[88,18] cannot find symbol
+[ERROR]   symbol:   method setHackathonDates(com.spring.codeamigosbackend.hackathon.model.Hackathon.HackathonDates)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[89,18] cannot find symbol
+[ERROR]   symbol:   method setCreatedAt(java.time.LocalDateTime)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[90,18] cannot find symbol
+[ERROR]   symbol:   method setUpdatedAt(java.time.LocalDateTime)
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[91,39] cannot find symbol
+[ERROR]   symbol:   method getCreatedBy()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[92,41] cannot find symbol
+[ERROR]   symbol:   method getCreatedById()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[119,20] cannot find symbol
+[ERROR]   symbol:   method getRegistrationDates()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[119,69] cannot find symbol
+[ERROR]   symbol:   method getRegistrationDates()
+[ERROR]   location: variable request of type com.spring.codeamigosbackend.hackathon.dto.HackathonDTO
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[165,26] cannot find symbol
+[ERROR]   symbol:   method getLatitude()
+[ERROR]   location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[165,53] cannot find symbol
+[ERROR]   symbol:   method getLongitude()
+[ERROR]   location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[167,79] cannot find symbol
+[ERROR]   symbol:   method getLatitude()
+[ERROR]   location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[167,96] cannot find symbol
+[ERROR]   symbol:   method getLongitude()
+[ERROR]   location: variable h of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[189,35] cannot find symbol
+[ERROR]   symbol:   method getFrameworkUsage()
+[ERROR]   location: variable stats of type com.spring.codeamigosbackend.recommendation.models.UserFrameworkStats
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[189,72] cannot find symbol
+[ERROR]   symbol:   method getFrameworkUsage()
+[ERROR]   location: variable stats of type com.spring.codeamigosbackend.recommendation.models.UserFrameworkStats
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[194,52] cannot find symbol
+[ERROR]   symbol:   method getFrameworkUsage()
+[ERROR]   location: variable stats of type com.spring.codeamigosbackend.recommendation.models.UserFrameworkStats
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[240,43] cannot find symbol
+[ERROR]   symbol:   method getTechStacks()
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] /C:/Users/DELL/Downloads/Temp_Monorepo/backend/src/main/java/com/spring/codeamigosbackend/hackathon/service/HackathonService.java:[264,43] cannot find symbol
+[ERROR]   symbol:   method getTechStacks()
+[ERROR]   location: variable hackathon of type com.spring.codeamigosbackend.hackathon.model.Hackathon
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

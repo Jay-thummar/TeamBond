@@ -1,6 +1,5 @@
 package com.spring.codeamigosbackend.registration.service;
 
-
 import com.spring.codeamigosbackend.registration.model.User;
 import com.spring.codeamigosbackend.registration.repository.UserRepository;
 import com.spring.codeamigosbackend.registration.exception.UserAlreadyExistsException;
@@ -21,7 +20,6 @@ import java.util.stream.Collectors;
 public class UserService {
 
     private final UserRepository userRepository;
-
 
     // Register new user
     public User registerUser(User user) {
@@ -62,7 +60,7 @@ public class UserService {
         if (userOptional.isPresent()) {
             User userToUpdate = userOptional.get();
 
-            if(user.getUsername()!=null) {
+            if (user.getUsername() != null) {
                 if (userRepository.existsByUsername(user.getUsername())) {
                     throw new UserAlreadyExistsException("Username already exists: " + user.getUsername());
                 }
@@ -87,31 +85,31 @@ public class UserService {
             if (user.getLeetcodeUsername() != null) {
                 userToUpdate.setLeetcodeUsername(user.getLeetcodeUsername());
             }
-            if (user.getLinkedinurl() != null) {
-                userToUpdate.setLinkedinurl(user.getLinkedinurl());
+            if (user.getLinkedinUrl() != null) {
+                userToUpdate.setLinkedinUrl(user.getLinkedinUrl());
             }
             if (user.getCodechefUsername() != null) {
                 userToUpdate.setCodechefUsername(user.getCodechefUsername());
             }
-            if (user.getInstagramusername() != null) {
-                userToUpdate.setInstagramusername(user.getInstagramusername());
+            if (user.getInstagramUsername() != null) {
+                userToUpdate.setInstagramUsername(user.getInstagramUsername());
             }
-            if (user.getTwitterusername() != null) {
-                userToUpdate.setTwitterusername(user.getTwitterusername());
+            if (user.getTwitterUsername() != null) {
+                userToUpdate.setTwitterUsername(user.getTwitterUsername());
             }
-            if(user.getResumeUrl()!=null) {
+            if (user.getResumeUrl() != null) {
                 userToUpdate.setResumeUrl(user.getResumeUrl());
             }
-            if(user.getPortfolioUrl()!=null) {
+            if (user.getPortfolioUrl() != null) {
                 userToUpdate.setPortfolioUrl(user.getPortfolioUrl());
             }
-            if(user.getGifUrl()!=null) {
+            if (user.getGifUrl() != null) {
                 userToUpdate.setGifUrl(user.getGifUrl());
             }
             if (user.getCoverPhotoUrl() != null) {
                 userToUpdate.setCoverPhotoUrl(user.getCoverPhotoUrl());
             }
-            if(user.getEmoji()!=null) {
+            if (user.getEmoji() != null) {
                 userToUpdate.setEmoji(user.getEmoji());
             }
             return userRepository.save(userToUpdate);
@@ -123,20 +121,21 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public List<java.lang.String> getAllUsersId(){
+    public List<java.lang.String> getAllUsersId() {
         return userRepository.findAll().stream().map(User::getId).collect(Collectors.toList());
     }
 
     public List<User> getAllUsersById(List<String> userid) {
         return userRepository.findAllById(userid);
     }
+
     public Optional<User> getUserById(java.lang.String id) {
         return userRepository.findById(id);
     }
+
     public String getCurrentUserId() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         log.info("Current user id: {}", authentication.getPrincipal());
         return (String) authentication.getPrincipal(); // This is the userId set in the filter
     }
 }
-

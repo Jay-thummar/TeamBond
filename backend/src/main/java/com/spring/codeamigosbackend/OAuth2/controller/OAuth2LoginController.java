@@ -1,27 +1,40 @@
 package com.spring.codeamigosbackend.OAuth2.controller;
 
-import com.spring.codeamigosbackend.OAuth2.util.EncryptionUtil;
-import com.spring.codeamigosbackend.OAuth2.util.JwtUtil;
-import com.spring.codeamigosbackend.registration.model.User;
-import com.spring.codeamigosbackend.rabbitmq.producer.RabbitMqProducer;
-import com.spring.codeamigosbackend.recommendation.dtos.GithubScoreRequest;
-import com.spring.codeamigosbackend.registration.repository.UserRepository;
-import io.github.cdimascio.dotenv.Dotenv;
-import jakarta.servlet.http.Cookie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.spring.codeamigosbackend.OAuth2.util.EncryptionUtil;
+import com.spring.codeamigosbackend.OAuth2.util.JwtUtil;
+import com.spring.codeamigosbackend.rabbitmq.producer.RabbitMqProducer;
+import com.spring.codeamigosbackend.recommendation.dtos.GithubScoreRequest;
+import com.spring.codeamigosbackend.recommendation.dtos.RepositoryInfo;
+import com.spring.codeamigosbackend.registration.model.User;
+import com.spring.codeamigosbackend.registration.repository.UserRepository;
+import com.spring.codeamigosbackend.registration.service.UserService;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
+import org.springframework.web.util.UriComponentsBuilder;
 
+import java.io.IOException;
+import java.util.Map;
 import java.util.Optional;
 
+@Slf4j
 @RestController
-@RequestMapping("/oauth2")
+@RequestMapping("/auth")
+@RequiredArgsConstructor
+@CrossOrigin(origins = "*") // Allow requests from any origin (customize for production)
 public class OAuth2LoginController {
 
     private static final String SECRET_KEY;
@@ -30,11 +43,11 @@ public class OAuth2LoginController {
         String key = com.spring.codeamigosbackend.config.LoadEnvConfig.get("JWT_SECRET_KEY");
         SECRET_KEY = key != null ? key : "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOP"; // fallback
     }
-    @Autowired
-    private UserRepository userRepository;
 
-    @Autowired
-    private RabbitMqProducer rabbitMqProducer;
+    private final UserRepository userRepository;
+    private final UserService userService;
+    private final com.spring.codeamigosbackend.config.LoadEnvConfig envConfig; // Explicit naming if needed
+    private final RabbitMqProducer rabbitMqProducer;
 
     private static Logger logger = LoggerFactory.getLogger(OAuth2LoginController.class);
 

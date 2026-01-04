@@ -1,0 +1,57 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ACTUAL_DEPLOY.bat
+	modified:   AUTO_LOGIN_AND_DEPLOY.ps1
+	modified:   DEPLOY.bat
+	modified:   DEPLOY_ALL.ps1
+	modified:   DEPLOY_NOW.ps1
+	modified:   DEPLOY_NOW_SIMPLE.bat
+	modified:   FINAL_DEPLOY.bat
+	modified:   RUN_DEPLOY.bat
+	modified:   RUN_THIS_NOW.bat
+	modified:   START_HERE.bat
+	modified:   backend/502_ERROR_FIX.md
+	modified:   backend/CONVERT_ENV_FOR_RAILWAY.md
+	modified:   backend/Dockerfile
+	modified:   backend/Dockerfile.production
+	modified:   backend/NEXT_STEPS_AFTER_DEPLOY.md
+	modified:   backend/NGINX_LOG_ISSUE.md
+	modified:   backend/RAILWAY_ENV_VARIABLES.md
+	modified:   backend/RAILWAY_ERROR_FIX.md
+	modified:   backend/RAILWAY_VARIABLES_COPY_PASTE.md
+	modified:   backend/RAILWAY_VARIABLES_READY.md
+	modified:   backend/ROOT_DIRECTORY_EXPLAINED.md
+	modified:   backend/build_log.txt
+	modified:   backend/lombok.config
+	modified:   backend/nixpacks.toml
+	modified:   backend/railway.json
+	modified:   backend/src/main/java/com/spring/codeamigosbackend/OAuth2/controller/OAuth2LoginController.java
+	modified:   backend/src/main/java/com/spring/codeamigosbackend/rabbitmq/config/RabbitMqConfig.java
+	modified:   backend/src/main/java/com/spring/codeamigosbackend/rabbitmq/producer/RabbitMqProducer.java
+	modified:   backend/src/main/java/com/spring/codeamigosbackend/registration/controller/UserController.java
+	modified:   backend/src/main/java/com/spring/codeamigosbackend/registration/model/User.java
+	modified:   backend/src/main/java/com/spring/codeamigosbackend/registration/service/UserService.java
+	modified:   backend/start.sh
+	modified:   deploy-railway.ps1
+	modified:   deploy-vercel.ps1
+	modified:   frontend/CodeAmigos--Frontend-main/MANUAL_DEPLOY.md
+	modified:   frontend/CodeAmigos--Frontend-main/VERCEL_DEPLOY.md
+	modified:   frontend/CodeAmigos--Frontend-main/vercel.json
+	modified:   setup-railway-vars.ps1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	DEPLOYMENT_CHECKLIST.md
+	backend/build_log_2.txt
+	backend/build_log_3.txt
+	backend/build_log_4.txt
+	backend/build_log_5.txt
+	committed_dockerfile.txt
+	debug_git_info.txt
+	git_status.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

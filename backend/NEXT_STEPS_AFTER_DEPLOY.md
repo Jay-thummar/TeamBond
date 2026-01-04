@@ -146,3 +146,6 @@ Backend માં CORS settings check કરો:
 **હવે તમારું application live છે! 🚀**
 
 
+
+
+

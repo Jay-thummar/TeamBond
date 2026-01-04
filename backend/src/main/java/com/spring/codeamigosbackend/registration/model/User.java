@@ -34,9 +34,9 @@ public class User {
 
     // new
     private String bio;
-    private String linkedinurl;
-    private String twitterusername;
-    private String instagramusername;
+    private String linkedinUrl;
+    private String twitterUsername;
+    private String instagramUsername;
     private String portfolioUrl;
     private String resumeUrl;
     private String gifUrl;

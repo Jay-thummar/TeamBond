@@ -15,7 +15,7 @@ RUN ./mvnw dependency:go-offline -B
 COPY src ./src
 
 # Build the application
-RUN ./mvnw clean package -DskipTests
+RUN ./mvnw clean package -DskipTests -Dmaven.compiler.proc=full
 
 # Runtime stage
 FROM eclipse-temurin:21-jre
@@ -33,5 +33,8 @@ EXPOSE 8080
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "CodeAmigos--Backend.jar"]
+
+
+
 
 

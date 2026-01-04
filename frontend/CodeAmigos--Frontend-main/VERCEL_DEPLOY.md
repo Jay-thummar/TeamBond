@@ -86,3 +86,6 @@ Make sure to set these environment variables in Vercel:
 - **Routing issues**: The `vercel.json` should handle this automatically
 
 
+
+
+

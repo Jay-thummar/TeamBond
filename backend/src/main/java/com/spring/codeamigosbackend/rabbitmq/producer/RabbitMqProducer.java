@@ -12,8 +12,6 @@ import java.io.File;
 
 @Service
 @RequiredArgsConstructor
-@Service
-@RequiredArgsConstructor
 public class RabbitMqProducer {
 
     private final RabbitTemplate rabbitTemplate;
