@@ -15,6 +15,9 @@ RUN chmod +x mvnw
 # Download dependencies (including annotation processors)
 RUN ./mvnw dependency:go-offline -B
 
+# Download sources for dependencies - using 'sources' instead of non-existent 'resolve-sources'
+RUN ./mvnw dependency:sources -B || true
+
 # Force rebuild to clear cache
 # Copy lombok.config if it exists
 COPY lombok.config* ./

@@ -149,3 +149,4 @@ Backend માં CORS settings check કરો:
 
 
 
+
