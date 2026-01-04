@@ -27,8 +27,8 @@ COPY src ./src
 
 # Clean and build with annotation processing
 # First compile to ensure Lombok generates getters/setters
-RUN ./mvnw clean compile -DskipTests -Dmaven.compiler.proc=full -X 2>&1 | grep -i "lombok\|annotation\|processor" | head -20 || true
-RUN ./mvnw package -DskipTests -Dmaven.compiler.proc=full
+RUN ./mvnw clean compile -DskipTests -X 2>&1 | grep -i "lombok\|annotation\|processor" | head -20 || true
+RUN ./mvnw package -DskipTests
 
 # Runtime stage
 FROM eclipse-temurin:21-jre

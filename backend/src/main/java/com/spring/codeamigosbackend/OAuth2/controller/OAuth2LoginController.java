@@ -46,7 +46,6 @@ public class OAuth2LoginController {
 
     private final UserRepository userRepository;
     private final UserService userService;
-    private final com.spring.codeamigosbackend.config.LoadEnvConfig envConfig; // Explicit naming if needed
     private final RabbitMqProducer rabbitMqProducer;
 
     private static Logger logger = LoggerFactory.getLogger(OAuth2LoginController.class);

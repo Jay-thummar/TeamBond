@@ -235,7 +235,6 @@
 					</compilerArgs>
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
-					<proc>full</proc>
 				</configuration>
 			</plugin>
 		</plugins>
