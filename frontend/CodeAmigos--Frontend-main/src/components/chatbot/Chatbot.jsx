@@ -104,7 +104,7 @@ const Chatbot = () => {
         user_id: "default_user"
       };
       console.log("before api hit ")
-      const response = await fetch("https://teambond-kjan.onrender.com/api/chatbot/test", {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chatbot/test`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

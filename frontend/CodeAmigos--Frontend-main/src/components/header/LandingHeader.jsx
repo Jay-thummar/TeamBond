@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const LandingHeader = () => {
 
   const handleGithubLogin = () => {
-    window.location.href = "https://teambond-kjan.onrender.com/oauth2/authorization/github";
+    window.location.href = `${import.meta.env.VITE_API_BASE_URL}/oauth2/authorization/github`;
   };
 
 

@@ -21,7 +21,7 @@ const MyHackathons = () => {
 
     const fetchMyHackathons = async () => {
         try {
-            const response = await axios.get(`https://teambond-kjan.onrender.com/api/hackathons/my-hackathons?userId=${userId}`, {
+            const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/hackathons/my-hackathons?userId=${userId}`, {
                 withCredentials: true
             });
             setHackathons(response.data);
@@ -37,7 +37,7 @@ const MyHackathons = () => {
         setRankingLoading(true);
         setCandidates([]);
         try {
-            const response = await axios.get(`https://teambond-kjan.onrender.com/api/hackathons/${hackathonId}/match-candidates`, {
+            const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/hackathons/${hackathonId}/match-candidates`, {
                 withCredentials: true
             });
             setCandidates(response.data);
